@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+:root {
+    --headerpadding: 111px;
+}
+
+body {
+    margin: 0 auto 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    max-width: 1600px;
+}
+
+header {
+    padding-top: var(--headerpadding);
+    height: calc(646px - var(--headerpadding));
+    width: 1321px;
+    background-color: #161616;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    background-image: url(assets/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 79px;
+    background-size: 581px 613px;
+}
+
+.bckgrnd-img {
+
+    height: calc(646px - var(--headerpadding));
+    width: 1321px;
+}
+
+.short-text-box {
+    width: 506px;
+    height: 78px;
+    margin-top: 20px;
+    margin-left: 111px;
+}
+
+.short-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    margin: 0 0 0 111px;
+    padding-top: 5px;
+    line-height: 1.15;
+    width: 531px;
+    height: 240px;
+}
+
+.btn {
+    height: auto;
+    width: 187px;
+    background-color: coral;
+    margin-top: 30px;
+    margin-left: 111px;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+}
+
+.btn-txt {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1;
+    width: fit-content;
+    color: #fff;
+}
+
+main {
+    margin: 130px auto 0 auto;
+    max-width: 646px;
+}
+
+.opt-box {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 15px;
+    display: block;
+}
+
+.opt {
+    width: 252px;
+    height: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    border-radius: 15px;
+    margin: 30px 30px 0 30px;
+
+}
+
+#opt-selected {
+    background-color: coral;
+    color: #fff;
+}
+
+.content {
+    margin-left: 24px;
+}
+
+.blog {}
