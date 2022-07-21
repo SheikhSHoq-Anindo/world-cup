@@ -251,8 +251,16 @@ li {
 }
 
 .hidden {
-
-    display: none;
+    height: 0;
+    width: 131px;
+    background-color: coral;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 auto 0 auto;
+    visibility: hidden;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 47px;
 }
 
 /* Media Qs */
