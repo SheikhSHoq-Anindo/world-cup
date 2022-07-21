@@ -83,7 +83,8 @@ h1 {
 
 main {
     margin: 130px auto 0 auto;
-    max-width: 646px;
+    max-width: 1321px;
+    display: flex;
 }
 
 .opt-box {
@@ -115,6 +116,45 @@ main {
 
 .content {
     margin-left: 24px;
+    display: grid;
+    grid: 362px / 312px auto auto;
+    gap: 24px 24px;
+    padding: 0px;
+    width: fit-content;
 }
 
-.blog {}
+.blog {
+    height: 362px;
+    width: 312px;
+    background-image: url(assets/Blog\ Image.png);
+    background-position: top center;
+    background-size: 312px 175px;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+}
+
+.trns {
+    margin: 195px 0 0 20px;
+    padding: 0;
+    height: 32px;
+    width: 100px;
+    border: solid 1px #161616;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.des {
+    margin: 15px 0 0 20px;
+    padding: 0;
+    color: black;
+}
+
+.ico {
+    margin: 15px 0 0 20px;
+    padding: 0;
+    color: #161616c7;
+}
