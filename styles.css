@@ -13,6 +13,13 @@ body {
     max-width: 1600px;
 }
 
+a {
+    text-decoration: none;
+
+}
+
+
+
 header {
     padding-top: var(--headerpadding);
     height: calc(646px - var(--headerpadding));
@@ -111,6 +118,10 @@ main {
 
 }
 
+.opt:hover {
+    cursor: pointer;
+}
+
 #opt-selected {
     background-color: coral;
     color: #fff;
@@ -119,7 +130,7 @@ main {
 .content {
     margin-left: 24px;
     display: grid;
-    grid: 362px / 312px auto auto;
+    grid: auto / 312px auto auto;
     gap: 24px 24px;
     padding: 0px;
     width: fit-content;
@@ -132,8 +143,9 @@ main {
     background-position: top center;
     background-size: 312px 175px;
     background-repeat: no-repeat;
-    background-color: aquamarine;
+    background-color: #fff
 }
+
 
 .trns {
     margin: 195px 0 0 20px;
@@ -157,6 +169,56 @@ main {
 
 .ico {
     margin: 40px 0 0 20px;
+    padding: 0;
+    color: #161616c7;
+}
+
+.blog-upc {
+    height: 242px;
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+}
+
+.spc {
+    height: 56.18px;
+    width: 252px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 53 auto 0 auto;
+}
+
+.L {
+    height: fit-content;
+    margin: 0 17px 0 0;
+}
+
+.R {
+    height: fit-content;
+    margin: 0 10px 0 0;
+}
+
+span {
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 17px 0 0;
+}
+
+.vs {
+    font-size: 25px;
+    margin: 55px 0 0 20px;
+    padding: 0;
+    color: black;
+}
+
+.tme {
+    margin: 30px 0 0 20px;
     padding: 0;
     color: #161616c7;
 }
@@ -188,6 +250,10 @@ li {
     padding: 0 30px 0 30px;
 }
 
+.hidden {
+
+    display: none;
+}
 
 /* Media Qs */
 /* Tablet View */
@@ -285,6 +351,7 @@ li {
         display: grid;
         grid: 64px/ auto auto auto;
         gap: 22px;
+        background-color: #fff;
     }
 
     .opt {
@@ -309,10 +376,11 @@ li {
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid: 414.21px / 357px auto;
+        grid: auto / 357px auto;
         gap: 20px;
         padding: 0px;
         width: fit-content;
+        margin-top: 30px;
     }
 
     .blog {
@@ -322,7 +390,7 @@ li {
         background-position: top center;
         background-size: 357px 200.24px;
         background-repeat: no-repeat;
-        background-color: aquamarine;
+        background-color: rgb(255, 255, 255);
     }
 
     .trns {
@@ -349,6 +417,57 @@ li {
         padding: 0;
         color: #161616c7;
     }
+
+    .blog-upc {
+        height: 414.21px;
+        width: 357px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px rgba(0, 0, 0, 0.192);
+        border-radius: 10px;
+    }
+
+    .spc {
+        height: 56.18px;
+        width: 252px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 53 auto 0 auto;
+    }
+
+    .L {
+        height: fit-content;
+        margin: 0 17px 0 0;
+    }
+
+    .R {
+        height: fit-content;
+        margin: 0 10px 0 0;
+    }
+
+    span {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0 17px 0 0;
+    }
+
+    .vs {
+        font-size: 25px;
+        margin: 55px 0 0 20px;
+        padding: 0;
+        color: black;
+    }
+
+    .tme {
+        margin: 30px 0 0 20px;
+        padding: 0;
+        color: #161616c7;
+    }
+
 
     footer {
         margin: 70px auto 0 auto;
@@ -380,10 +499,22 @@ li {
         padding: 0 30px 30px 30px;
     }
 
+    .hidden {
+        height: 47px;
+        width: 131px;
+        background-color: coral;
+        font-size: 20px;
+        color: #fff;
+        margin: 50px auto 0 auto;
+        visibility: visible;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 47px;
+    }
 }
 
 /* phone View */
-@media only screen and (max-width:687px) {
+@media only screen and (min-width:0px) and (max-width:687px) {
     body {
         margin: 0 auto 0 auto;
         font-family: 'Roboto', sans-serif;
@@ -394,16 +525,16 @@ li {
     header {
         padding-top: var(--headerpadding4Fons);
         height: calc(472px - var(--headerpadding4Fons));
-        max-width: 334px;
+        width: 334px;
         background-color: #161616;
+        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
-        border-radius: 25px;
+        border-radius: 15px;
         background-image: url(assets/Banner\ Image.png);
         background-repeat: no-repeat;
         background-position: bottom right 38px;
-        background-size: 323px 340px;
+        background-size: 233px 245px;
     }
 
     .bckgrnd-img {
@@ -412,81 +543,86 @@ li {
     }
 
     .short-text-box {
-        width: 316px;
+        width: 258px;
         height: 48px;
-        margin-top: 10px;
-        margin-left: 76px;
+        margin: 10px auto 0 auto;
     }
 
     .short-text {
         font-family: 'Poppins', sans-serif;
+        font-size: 14px;
         margin: 0;
-        width: 316px;
+        width: 258px;
         height: 48px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-align: center;
     }
 
     h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
-        font-size: 40px;
-        margin: 0 0 0 76px;
+        font-size: 22px;
+        margin: 0 auto 0 auto;
         padding-top: 5px;
-        line-height: 1.15;
-        width: 289px;
-        height: 150px;
+        line-height: 1.5;
+        width: 228px;
+        height: 66px;
+        text-align: center;
     }
 
     .btn {
         height: auto;
-        width: 168px;
+        width: 138px;
         background-color: coral;
-        margin-top: 20px;
-        margin-left: 76px;
+        margin: 16px auto 0 calc((334px - 138px) / 2);
         border-radius: 5px;
         border: 0;
         padding: 0;
+        justify-self: center;
     }
 
     .btn-txt {
         display: block;
         font-weight: 400;
         font-size: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        line-height: 1;
+        margin: 0;
+        line-height: 1.65;
         width: fit-content;
         color: #fff;
+        width: fit-content;
+        padding: 0 12px 0 12px;
     }
 
     main {
-        margin: 70px auto 0 auto;
-        max-width: 734px;
+        margin: 24px auto 0 auto;
+        max-width: 334px;
         display: flex;
         flex-direction: column;
     }
 
     .opt-box {
-        width: 734px;
+        width: 334px;
         height: auto;
         border-radius: 15px;
         display: grid;
-        grid: 64px/ auto auto auto;
-        gap: 22px;
+        grid: 64px;
+        gap: 16px;
+        justify-content: center;
+        background-color: #fff;
     }
 
     .opt {
-        width: 230px;
-        height: 64px;
+        width: 210px;
+        height: 48px;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 20px;
         background-color: #fff;
         border: 0;
         padding: 0;
-        border-radius: 20px;
+        border-radius: 5px;
         margin: 0;
     }
 
@@ -499,27 +635,28 @@ li {
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid: 414.21px / 357px auto;
+        margin-top: 24px;
+        grid: 389px / 335px;
         gap: 20px;
         padding: 0px;
         width: fit-content;
     }
 
     .blog {
-        height: 414.21px;
-        width: 357px;
+        height: 389px;
+        width: 335px;
         background-image: url(assets/Blog\ Image.png);
         background-position: top center;
-        background-size: 357px 200.24px;
+        background-size: 335px 187.9px;
         background-repeat: no-repeat;
-        background-color: aquamarine;
+        background-color: #fff
     }
 
     .trns {
-        margin: 229px 0 0 22.8px;
+        margin: 212px 0 0 17.8px;
         padding: 0;
-        height: 38.62px;
-        width: 115px;
+        height: 34.36px;
+        width: 107.37px;
         border: solid 1px #161616;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
@@ -529,28 +666,81 @@ li {
     }
 
     .des {
-        margin: 17.9px 0 0 22.8px;
+        margin: 17.9px auto 0 21.47px;
         padding: 0;
+        height: 56px;
+        width: 293px;
         color: black;
     }
 
     .ico {
-        margin: 21px 0 0 22.8px;
+        margin: 24px 0 0 21.47px;
+        padding: 0;
+        color: #161616c7;
+    }
+
+    .blog-upc {
+        height: 389px;
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px rgba(0, 0, 0, 0.192);
+        border-radius: 10px;
+    }
+
+    .spc {
+        height: 56.18px;
+        width: 252px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 53 auto 0 auto;
+    }
+
+    .L {
+        height: fit-content;
+        margin: 0 17px 0 0;
+    }
+
+    .R {
+        height: fit-content;
+        margin: 0 10px 0 0;
+    }
+
+    span {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0 17px 0 0;
+    }
+
+    .vs {
+        font-size: 25px;
+        margin: 55px 0 0 20px;
+        padding: 0;
+        color: black;
+    }
+
+    .tme {
+        margin: 30px 0 0 20px;
         padding: 0;
         color: #161616c7;
     }
 
     footer {
-        margin: 70px auto 0 auto;
-        max-width: 834px;
+        margin: 25px auto 0 auto;
+        max-width: 375px;
         background-color: #161616;
     }
 
     h3 {
-        padding-top: 70px;
+        padding-top: 24px;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 22px;
+        line-height: 1.7;
         width: fit-content;
         margin: 0 auto 0px auto;
     }
@@ -559,15 +749,21 @@ li {
         display: flex;
         margin: 0 auto 0 auto;
         width: fit-content;
-        padding: 60px 0 25px 0;
+        padding: 65px 0 0 0;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     li {
         list-style: none;
-        padding: 0 30px 30px 30px;
+        padding: 0 0 28px 0;
+        font-size: 14px;
+        text-align: center;
     }
 
+    .hidden {
+        display: none;
+    }
 }
